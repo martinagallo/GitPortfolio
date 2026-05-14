@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallo Martina – Contatti</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="immagini/logo-martina-beige.svg" alt="Martina"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-label="Apri menu">
+          <img src="immagini/nohamburger.svg" alt="">
+        </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="biografia.html">Persona</a></li>
+              <li class="nav-item"><a class="nav-link" href="competenze.html">Competenze</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contatti.html">Contatti</a></li>
+            </ul>
+      </div>
+    </div>
+</nav>
+
+<section id="contatti-section">
+      <h2 class="page-title">CONTATTAMI</h2>
+    <hr class="divisore">
+
+    <div class="contatti-wrapper">
+        <div class="contatti-grid">
+
+          <a class="contatto-card" href="tel:3758178087">
+              <div class="contatto-icon"><img src="immagini/telefono_icona.png" alt="Telefono"></div>
+            <div class="contatto-info">
+                <div class="label">Telefono</div>
+              <div class="value">375 817 8087</div>
+            </div>
+          </a>
+
+            <a class="contatto-card" href="mailto:martinagallo.gg@gmail.com">
+              <div class="contatto-icon"><img src="immagini/mail_icona.png" alt="Email"></div>
+                <div class="contatto-info">
+                  <div class="label">Email</div>
+                    <div class="value">martinagallo.gg@gmail.com</div>
+                </div>
+            </a>
+
+          <a class="contatto-card" href="https://www.instagram.com/martygallo_/" target="_blank" rel="noopener">
+              <div class="contatto-icon"><img src="immagini/instagram_icona.png" alt="Instagram"></div>
+            <div class="contatto-info">
+                <div class="label">Instagram</div>
+              <div class="value">@martygallo_</div>
+            </div>
+          </a>
+
+            <a class="contatto-card" href="https://github.com/" target="_blank" rel="noopener">
+              <div class="contatto-icon"><img src="immagini/github.svg" alt="GitHub"></div>
+                <div class="contatto-info">
+                  <div class="label">GitHub</div>
+                    <div class="value">github.com/martina</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<button id="scroll-top" aria-label="Torna in cima"><img src="immagini/freccia-su.svg" alt=""></button>
+
+<footer id="footer">
+    <p>Gallo Martina — Ultimo aggiornamento: 13/05/2026</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const btn = document.getElementById('scroll-top');
+window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 100));
+btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>

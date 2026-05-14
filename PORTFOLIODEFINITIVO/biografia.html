@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallo Martina – Persona</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="immagini/logo-martina-beige.svg" alt="Martina"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-label="Apri menu">
+          <img src="immagini/nohamburger.svg" alt="">
+        </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="biografia.html">Persona</a></li>
+            <li class="nav-item"><a class="nav-link" href="competenze.html">Competenze</a></li>
+              <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="biografia">
+    <h2 class="page-title">BIOGRAFIA</h2>
+        <hr class="divisore">
+
+  <ul id="menu-biografia">
+
+      <li id="me">
+        <a href="#me" class="img-link"><img src="immagini/piccolame.jpg" alt="Martina Gallo"></a>
+            <div class="info">
+              <a href="#me" class="sottotitolo">La mia persona</a>
+          <div class="contenuto">
+            <p>Mi chiamo Martina Gallo e ritengo di essere una persona affidabile, responsabile e
+                predisposta al lavoro di gruppo. Sono aperta alla comunicazione e all'organizzazione e mi
+              impegno a riconoscere le diverse situazioni, adattando di conseguenza il mio comportamento e
+                il mio lessico, per collaborare efficacemente e creare un ambiente armonioso e produttivo.
+            Nonostante la mia giovane età, sono animata da una forte voglia di fare, apprendere,
+              crescere e migliorarmi costantemente. Ho maturato esperienze lavorative, come la raccolta
+                della frutta, che mi hanno insegnato il valore della disciplina, della costanza e del
+              denaro, rafforzando in me il senso di responsabilità e di impegno.</p>
+                <p>Nel tempo libero coltivo la passione per gli anime, tra i miei titoli preferiti ci sono
+              <a href="https://it.wikipedia.org/wiki/Attack_on_Titan" target="_blank" rel="noopener" class="link-anime">Attack on Titan</a>,
+                <a href="https://it.wikipedia.org/wiki/Violet_Evergarden" target="_blank" rel="noopener" class="link-anime">Violet Evergarden</a> e
+              <a href="https://it.wikipedia.org/wiki/Hunter_x_Hunter" target="_blank" rel="noopener" class="link-anime">Hunter x Hunter</a>.
+            Negli ultimi tempi ho riscoperto il piacere della lettura, in particolare di testi di
+              psicologia e filosofia, che mi permettono di esplorare la mente, suscitando emozioni
+                profonde e stimolando riflessioni complesse, contribuendo alla mia crescita personale e
+              alla mia visione del mondo.</p>
+          </div>
+            </div>
+      </li>
+
+        <li id="scuola">
+          <a href="#scuola" class="img-link"><img src="immagini/vallauri.jpg" alt="Istituto Vallauri"></a>
+            <div class="info">
+              <a href="#scuola" class="sottotitolo">Scuola</a>
+          <div class="contenuto">
+              <p>Frequento il terzo anno dell'
+                <a href="http://www.vallauri.edu/public/ita/pagina.asp" target="_blank" rel="noopener" id="link-vallauri">Istituto di Istruzione Superiore Giancarlo Vallauri</a>,
+              settore Informatica e Telecomunicazioni, acquisendo competenze tecniche e metodologiche
+                fondamentali. Tra le mie passioni rientra l'informatica, ambito nel quale amo comprendere
+              e sperimentare, poiché mi permette di approfondire le mie conoscenze, scoprire nuove
+                possibilità e, in qualche modo, conoscere meglio me stessa. È un'attività che mi coinvolge
+              profondamente, richiede concentrazione e precisione e mi consente di distogliere la mente
+                dalle distrazioni del mondo esterno.</p>
+          </div>
+            </div>
+        </li>
+
+      <li id="futuro">
+          <a href="#futuro" class="img-link"><img src="immagini/fururo.png" alt="Futuro"></a>
+        <div class="info">
+            <a href="#futuro" class="sottotitolo">Futuro</a>
+          <div class="contenuto">
+              <p>Guardo al futuro con determinazione e curiosità. Il mio obiettivo è continuare a formarmi,
+            ampliare i miei orizzonti e trasformare la passione per l'informatica in una professione
+              concreta e appagante. Desidero mettermi alla prova, affrontare nuove sfide e contribuire a
+            progetti innovativi, migliorando costantemente le mie competenze tecniche e personali.
+              Credo che l'impegno, la volontà di apprendere e la capacità di adattarsi siano elementi
+            fondamentali per costruire il mio percorso professionale e raggiungere il lavoro dei miei
+              sogni.</p>
+          </div>
+        </div>
+      </li>
+
+  </ul>
+</section>
+
+<button id="scroll-top" aria-label="Torna in cima"><img src="immagini/freccia-su.svg" alt=""></button>
+
+<footer id="footer">
+    <p>Gallo Martina — Ultimo aggiornamento: 13/05/2026</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const btn = document.getElementById('scroll-top');
+window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 100));
+btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
